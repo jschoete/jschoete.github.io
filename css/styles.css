@@ -6436,10 +6436,10 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #6c757d; /* #bd5d38 orange replaced to gray #6c757d */
+  color: #bd5d38;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #565e64; /* #ca7d60 orange replaced to gray #565e64 */
+  color: #ca7d60;
 }
 
 .link-secondary {
@@ -6889,7 +6889,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-  border-color: rgb(105, 105, 105) !important; /* #bd5d38 orange changed to dark gray */
+  border-color: #bd5d38 !important;
 }
 
 .border-secondary {
@@ -7774,17 +7774,17 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important; /* ? */
+  color: #6c757d !important;
 }
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important; /* black changed to white */
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important; /* white changed to black */
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .text-reset {
@@ -11291,7 +11291,7 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
-  color: rgb(105,105,105); /* ? */
+  color: #6c757d;
 }
 
 @media (min-width: 992px) {
@@ -11318,14 +11318,6 @@ h1, .h1 {
   line-height: 1;
 }
 
-h2, .h2 {
-  text-decoration: underline;
-}
-
-h3, .h3 {
-  text-decoration: underline;
-}
-
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
@@ -11335,7 +11327,7 @@ p.lead {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 #sideNav {
@@ -11348,7 +11340,7 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: rgb(105,105,105);
+  outline-color: #d48a6e;
 }
 
 @media (min-width: 992px) {
@@ -11370,9 +11362,9 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 15rem;
-    max-height: 15rem;
-    border: 0.5rem solid rgba(10, 10, 10, 0.2); /* profile image border */
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
