@@ -6889,7 +6889,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-  border-color: #bd5d38 !important;
+  border-color: rgb(105, 105, 105) !important; /* #bd5d38 orange changed to dark gray */
 }
 
 .border-secondary {
@@ -7774,17 +7774,17 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #6c757d !important; /* ? */
 }
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important; /* black changed to white */
 }
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(0, 0, 0, 0.5) !important; /* white changed to black */
 }
 
 .text-reset {
@@ -11291,7 +11291,7 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
-  color: rgb(105,105,105);
+  color: rgb(105,105,105); /* ? */
 }
 
 @media (min-width: 992px) {
