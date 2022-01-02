@@ -6436,10 +6436,10 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #bd5d38;
+  color: #6c757d; /* #bd5d38 orange replaced to gray #6c757d */
 }
 .link-primary:hover, .link-primary:focus {
-  color: #ca7d60;
+  color: #565e64; /* #ca7d60 orange replaced to gray #565e64 */
 }
 
 .link-secondary {
