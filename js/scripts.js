@@ -5,7 +5,12 @@
 */
 //
 // Scripts
-// 
+//
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (!document.body.classList.contains('dark'))
+        document.body.className += ' dark';
+}
 
 window.addEventListener('DOMContentLoaded', event => {
 
