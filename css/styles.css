@@ -11295,13 +11295,15 @@ body {
 }
 :root {
   --color-page-background: white;
+  --profile-picture-border: rgba(255, 255, 255, 0.2);
   --color-text: #343a40;
   --display-sun: none;
   --display-moon: inline;
 }
 
 .dark {
-  --color-page-background: #131313;
+  --color-page-background: #202020;
+  --profile-picture-border: rgba(32, 32, 32, 0.2);
   --color-text: #DFDFDF;
   --display-moon: none;
   --display-sun: inline;
@@ -11406,7 +11408,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 15rem;
     max-height: 15rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2); /* profile image border */
+    border: 0.5rem solid var(--profile-picture-border); /* profile image border */
   }
   #sideNav .navbar-collapse {
     display: flex;
