@@ -11301,7 +11301,7 @@ body {
 }
 
 .dark {
-  --color-page-background: #003042;
+  --color-page-background: #131313;
   --color-text: #DFDFDF;
   --display-moon: none;
   --display-sun: inline;
@@ -11325,6 +11325,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
   color: var(--color-text);
 }
+
+
 
 @media (min-width: 992px) {
   body {
