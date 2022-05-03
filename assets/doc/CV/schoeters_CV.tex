@@ -20,6 +20,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{babel}
 \usepackage[symbol]{footmisc}
 \usepackage{hyperref} 
@@ -31,6 +32,7 @@
 \makeatletter
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
 \makeatother
+\newcommand{\TODO}[1]{\textcolor{red}{TODO #1}}
 
 \name{Curriculum Vit\ae} 
 \address{} 
@@ -41,11 +43,11 @@
 \begin{tabular}{ m{6em} m{15em} }
 \textbf{Name:} & Jason Schoeters\\
 \textbf{Nationality:} & Belgian\\
-\textbf{Age:} & 28\\
+\textbf{Age:} & 29\\
 %\\ [1em]\\[-2.9em]
-\textbf{Website:} & \url{www.jschoete.github.io}\\
+\textbf{Website:} & \url{https://jschoete.github.io}\\
 %\\ [1em]\\[-2.9em]
-\textbf{E-mail: } & jason.schoeters.cs@gmail.com\\
+\textbf{E-mail: } & \href{mailto:jason.schoeters.cs@gmail.com}{jason.schoeters.cs@gmail.com}\\
 \end{tabular}
 \end{minipage} 
 \begin{minipage}[t]{0.49\textwidth}
@@ -53,20 +55,28 @@
 \textbf{Phone number: } & +33 678263949\\
 \textbf{Office:} & LITIS office B101,\\
 &25 rue Philippe Lebon,\newline 76063 Le Havre, France\\
-\textbf{Last updated:} & December 22 2021
+\textbf{Last updated:} & April 21 2022
 \end{tabular}
 \end{minipage} 
 
-\begin{rSection}{Academy}
-	{\bf Research and teaching assistant} \hfill {\em 2020 - 2021} 
+\begin{rSection}{Experience}
+	{\bf Postdoctoral research fellow} \hfill {\em 2021 - 2022} 
+	\\ University of Le Havre, France
+%	\\ $| \qquad$ \textit{Subject:} Extending graph theory concepts in a temporal setting
+	\\ $| \qquad$ \textit{Subjects}: Components and dense spanners in temporal graphs
+	\\ $| \qquad$ at LITIS, collaborating with Eric Sanlaville
+	\\
+	\\ {\bf Research and teaching assistant} \hfill {\em 2020 - 2021} 
 	\\ University of Bordeaux, France
+	\\ $| \qquad$ \textit{Subjects}: Structural and algorithmic geometrical problems
+	\\ $| \qquad$ at LaBRI
 \end{rSection}
 
 \begin{rSection}{Education}
-{\bf Visiting graduate student} \hfill {\em February 2020}
+{\bf Visiting graduate student} \hfill {\em winter 2020}
 \\ Simon Fraser University, Vancouver, Canada
 \\ $| \qquad$ \textit{Subjects:} Gossiping, Influence diffusion, Temporal spanners
-\\ $| \qquad$ invited by Joseph G. Peters
+\\ $| \qquad$ at School of computing, invited by Joseph G. Peters
 \\
 \\{\bf PhD candidate in Computer Science} \hfill {\em 2017 - 2020} 
 \\ École doctorale Mathématiques et Informatique, Bordeaux, France
@@ -92,37 +102,60 @@
 %\\ \\
 {\bf VectorTSP: A Traveling Salesperson Problem with Racetrack-like acceleration constraints}\\
 $| \qquad$ A. Casteigts, M. Raffinot, J. Schoeters\\
+$| \qquad$ Under revision for Discrete Applied Mathematics \hfill {\em 2022+}\\
 $| \qquad$ 16th Int. Symposium on Algorithms and Experiments for Wireless Sensor Networks \hfill {\em 2020}\\
 $| \qquad$ \textbf{ALGOSENSORS} 
 \\ \\
 {\bf Temporal Cliques Admit Sparse Spanners}\\
 $| \qquad$ A. Casteigts, J.G. Peters, J. Schoeters\\
+$| \qquad$ Journal of Computer Systems and Science, Elsevier (JCSS), Vol. 121, 1-17 \hfill {\em 2021}\\
 $| \qquad$ $46^{th}$ Int. Colloquium on Automata, Languages, and Programming \hfill {\em 2019}\\
 $| \qquad$ \textbf{ICALP}
 \end{rSection}
 
-\newpage
+%\newpage
 
 \begin{rSection}{Software Development}
+	
+	
+	{\bf VectorTSP competition} \hfill {\em 2021}\\
+	$| \qquad$ Java program computing VectorTSP benchmarks with multiPointAStar algorithm\\
+	$| \qquad$ available on \url{https://github.com/jschoete/competitionVectorTSP}\\
+	\\	
+	{\bf Estimation, approximation and exact computation of overlapping canopied areas} \hfill {\em 2021}\\
+	$| \qquad$ Java program computing canopied areas covered by given buffer zone\\
+	$| \qquad$ with Clément Larue\\
+	$| \qquad$ available on \url{https://github.com/jschoete/CanopyAreaComputer}\\
+	\\	
 	{\bf Mobility models inducing temporal graph properties} \hfill {\em 2021}\\
-	$| \qquad$ Java library using JBotSim\\
+	$| \qquad$ Java library using JBotSim for inducing temporal graph properties in MANET\\
 	$| \qquad$ with Arnaud Casteigts\\
 	$| \qquad$ available on \url{https://github.com/jschoete/mobilitymodels}\\
 	\\
 	{\bf Automatic analysis of large DNA genotyping data} \hfill {\em 2020}\\
-	$| \qquad$ Java executable treating Excel files\\
+	$| \qquad$ Java program analyzing Excel data files for DNA parent/child mismatches\\
 	$| \qquad$ with Clément Larue\\
 	$| \qquad$ available on \url{https://github.com/jschoete/mismatchfinder}
 \end{rSection}
 
 \begin{rSection}{Talks}
-{\bf Notes on the number of labels per edge maintaining temporal connectivity} \\
+
+{\bf Estimation, approximation and exact computation of overlapping canopied areas} \\
+$| \qquad$ \textit{Heudiasyc CID seminar}, Compiegne, France \hfill {\em April 12 2022} 
+\\ \\
+{\bf Notes on the maximum number of labels for temporal spanners} \\
 $| \qquad$ \textit{Temporal graphs seminar}, Dagstuhl, Germany (online)\hfill {\em April 28 2021} 
+\\ \\	
+{\bf Contributions to temporal graph theory and mobility-related problems} \\
+$| \qquad$ \textit{LaBRI PhD defense}, Bordeaux, France\hfill {\em 
+	March 29, 2021} 
 \\ \\	
 %{\bf The Traveling Salesman Problem} \\
 %$| \qquad$ \textit{PubhD vulgarization}, Bordeaux, France\hfill {\em delayed due to COVID19, 2020+} 
 %\\ \\
 {\bf VectorTSP: A Traveling Salesperson Problem with Racetrack-like acceleration constraints}\\
+$| \qquad$ \textit{AlgoTel}, La Rochelle, France\hfill {\em September 22, 2021}\\
+$| \qquad$ \textit{LITIS RI2C seminar}, Le Havre, France\hfill {\em June 15, 2021}\\
 $| \qquad$ \textit{TU Berlin Algorithmics Colloquium}, Berlin, Germany (online)\hfill {\em December 8, 2020}\\
 $| \qquad$ \textit{LaBRI distributed algorithms seminar}, Bordeaux, France\hfill {\em September 14, 2020}\\
 $| \qquad$ \textit{ALGOSENSORS}, Pisa, Italy (online) \hfill {\em September 10, 2020} 
@@ -131,6 +164,7 @@ $| \qquad$ \textit{ALGOSENSORS}, Pisa, Italy (online) \hfill {\em September 10, 
 $| \qquad$ \textit{SFU Theory Seminar}, Vancouver, Canada\hfill {\em March 2, 2020}
 \\ \\
 {\bf Temporal Cliques Admit Sparse Spanners} \\
+$| \qquad$ \textit{ROADEF}, Lyon, France\hfill {\em February 24, 2022} \\
 $| \qquad$ \textit{LIP6 complex networks seminar}, Paris, France\hfill {\em November 10, 2020} \\
 $| \qquad$ \textit{SFU Discrete Maths Seminar}, Vancouver, Canada\hfill {\em February 18, 2020} \\
 $| \qquad$ \textit{AlgoTel}, Narbonne, France (\textbf{best student paper award})\hfill {\em June 4 - 7, 2019} \\
@@ -140,29 +174,39 @@ $| \qquad$ \textit{Journées Graphes et Algorithmes}, Grenoble, France\hfill {\e
 \end{rSection}
 
 \begin{rSection}{Students}
+	
+{\bf Esteban Christiann} (L3 ENS Paris-Saclay) \hfill {\em summer 2022}
+\\
+$| \qquad$ \textit{Internship}: Dense spanners and related problems\\
+$| \qquad$ at LITIS, co-supervised with Eric Sanlaville
+\\ \\	
 {\bf Valentin Pasquale} (L3 ENS Lyon) \hfill {\em summer 2019} 
 \\
 $| \qquad$ \textit{Internship}: Spanners in temporal graphs\\
 $| \qquad$ at LaBRI, co-supervised with Arnaud Casteigts
 \end{rSection}
 
+%\begin{rSection}{Reviews}
+%	
+%	$| \qquad$ Algorithmica \hfill {\em 2022} \\
+%	$| \qquad$ Theoretical Computer Science \\
+%	$| \qquad$ Computing \hfill {\em 2021} \\
+%	$| \qquad$ Computer Networks \\
+%	$| \qquad$ ROADEF \\
+%	$| \qquad$ ALGOSENSORS \\
+%	$| \qquad$ Journal of Interconnection Networks \\
+%	$| \qquad$ Theoretical Computer Science \\
+%	$| \qquad$ Journal of Computer and System Sciences \\
+%	$| \qquad$ Theoretical Computer Science \hfill {\em 2020} \\
+%	$| \qquad$ ALGOSENSORS \\
+%	$| \qquad$ AlgoTel \\
+%	$| \qquad$ Journal of Computer and System Sciences\\
+%	$| \qquad$ International Symposium on Mathematical Foundations of Computer Science \hfill {\em 2019} \\
+%	$| \qquad$ Discrete Applied Mathematics \\
+%	$| \qquad$ CoRes \hfill {\em 2018} 
+%\end{rSection}
 
-\begin{rSection}{Reviews}
-	$| \qquad$ Journal of Interconnection Networks \hfill {\em 2021} \\
-	$| \qquad$ Theoretical Computer Science \\
-	$| \qquad$ Journal of Computer and System Sciences \\
-	$| \qquad$ Theoretical Computer Science \hfill {\em 2020} \\
-	$| \qquad$ ALGOSENSORS \\
-	$| \qquad$ AlgoTel \\
-	$| \qquad$ Journal of Computer and System Sciences\\
-	$| \qquad$ International Symposium on Mathematical Foundations of Computer Science \hfill {\em 2019} \\
-	$| \qquad$ Discrete Applied Mathematics \\
-	$| \qquad$ CoRes \hfill {\em 2018} 
-\end{rSection}
-
-\newpage
-
-\begin{rSection}{Teaching}
+\begin{rSection}{Teaching ($\approx$ 350 hours)}
 \textbf{University of Bordeaux} \\
 $| \qquad$ Mobility algorithms ($2^{nd}$ year Master of Networking)\hfill {\em 2020-2021}\\
 $| \qquad$ Automata theory ($3^{rd}$ year Bachelor of CS)\\
@@ -171,80 +215,49 @@ $| \qquad$ Excel and CS basics ($2^{nd}$ year Bachelor of Economics and Manageme
 $| \qquad$ Array algorithms ($1^{st}$ year Bachelor of Math and CS, \textbf{course given in English})\\
 $| \qquad$ CS basics ($1^{st}$ year Bachelor of Math and Science)\\
 $| \qquad$ CS specialty ($1^{st}$ year Bachelor of Math and Science)\\
-\\
 $| \qquad$ Mobility algorithms ($2^{nd}$ year Master of Networking)\hfill {\em 2019-2020}\\
 $| \qquad$ Array algorithms ($1^{st}$ year Bachelor of Math and CS)\\
 $| \qquad$ CS basics ($1^{st}$ year Bachelor of Math and Science)\\
-\\
 $| \qquad$ Basic data structure algorithms ($2^{nd}$ year Bachelor of CS)\hfill {\em 2018-2019}\\
 $| \qquad$ Networking ($2^{nd}$ year Bachelor of CS)\\
-\\
 $| \qquad$ Basic data structure algorithms ($2^{nd}$ year Bachelor of CS)\hfill {\em 2017-2018}\\
 $| \qquad$ Array algorithms ($1^{st}$ year Bachelor of Math and CS)
+\\
+
+\textbf{Bordeaux highschools} \\
+$| \qquad$ MATh.en.JEANS ($\approx$ 14-year-olds)\hfill {\em 2018-2019}\\
+$| \qquad$ Maths à modeler ($\approx$ 17-year-olds)\hfill {\em 2017-2018}
 \end{rSection}
 
-%\begin{rSection}{Other}
-%\textbf{Member:} \hfill (lines noted with a \textbf{*} means they still apply today) \\
-%$| \qquad$ Shadow PC AlgoTel \hfill {\em 2020}\\
-%$| \qquad$ Organizing committee IWOCA (website creator: \url{https://iwoca2020.labri.fr/}) \\
-%$| \qquad$ Organizing committee seminar AlgoDist at LaBRI \textbf{*} \hfill {\em 2019}\\
-%$| \qquad$ PhD student association Afodib, as secretary and seminar organizer \textbf{*} \hfill {\em 2018}\\
-%$| \qquad$ MATh.en.JEANS \\
-%$| \qquad$ Organizing committee FCT \hfill {\em 2017}\\
-%$| \qquad$ Maths à modeler\\
-%$| \qquad$ JBotSim occasional contributor \textbf{*}\\
-%\\ 
-%\textbf{Reviewer:} \\
-%$| \qquad$ Theoretical Computer Science \hfill {\em 2020 } \\
-%$| \qquad$ ALGOSENSORS \\
-%$| \qquad$ AlgoTel \\
-%$| \qquad$ Journal of Computer and System Sciences\\
-%$| \qquad$ International Symposium on Mathematical Foundations of Computer Science \hfill {\em 2019} \\
-%$| \qquad$ Discrete Applied Mathematics \\
-%$| \qquad$ CoRes \hfill {\em 2018} \\
-%\\
-%\textbf{Summer schools:} \\
+\begin{rSection}{Service} %\hfill \MakeLowercase{\normalfont(lines noted with a \textbf{*} still apply today)}}
+$| \qquad$ AlgoTel: program committee member \hfill {\em 2022} \\
+$| \qquad$ AlgoTel: graph session chair \hfill {\em 2021} \\
+$| \qquad$ Société Informatique de France: member \hfill {\em 2020} \\
+$| \qquad$ AlgoTel: shadow program committee member \\
+$| \qquad$ IWOCA: organizing committee member \\
+$| \qquad$ LaBRI AlgoDist seminar: co-organiser \hfill {\em 2019-2021}\\
+$| \qquad$ PhD student association Afodib: secretary and seminar organizer \hfill {\em 2018-2021}\\
+%$| \qquad$ MATh.en.JEANS: member \\
+$| \qquad$ FCT: organizing committee member \hfill {\em 2017}\\
+%$| \qquad$ Maths à modeler: member
+\end{rSection}
+
+%\begin{rSection}{Summer schools}
 %$| \qquad$ École de Jeunes Chercheurs en Informatique Mathématique \hfill {\em 2020}\\
-%$| \qquad$ ResCom (assistant and attendant)\hfill {\em 2019}\\
-%\\
-%\textbf{Events otherwise attending/attended:}\\
-%$| \qquad$ Dagstuhl Seminar Temporal Graphs: Structure, Algorithms, Applications \hfill {\em 2021}\\
-%$| \qquad$ GraphMasters workshop (online) \hfill {\em 2020}\\
+%$| \qquad$ ResCom (assistant and attendant)\hfill {\em 2019}
+%\end{rSection}
+%
+%\begin{rSection}{Events otherwise attending/attended}
+%%$| \qquad$ Dagstuhl Seminar Temporal Graphs: Structure, Algorithms, Applications \hfill {\em 2021}\\
+%$| \qquad$ Journée SIF Pandématique (online) \hfill {\em 2020}\\
+%$| \qquad$ Journées Graphes et Algorithmes (online) \\
+%$| \qquad$ GraphMasters workshop (online) \\
 %$| \qquad$ International Workshop on Graph-Theoretic Concepts (online) \\
 %$| \qquad$ ICALP Algorithmic Aspects of Temporal Graphs (online)\\
 %$| \qquad$ French-Israeli Laboratory on Foundations of Computer Science \hfill {\em 2018} \\
 %$| \qquad$ Journées Complexité et Algorithmes \\
-%$| \qquad$ Journées Graphes et Algorithmes \hfill {\em 2017} \\
-%\\ 
+%$| \qquad$ Journées Graphes et Algorithmes \hfill {\em 2017} 
 %\end{rSection}
-
-\begin{rSection}{Member} %\hfill \MakeLowercase{\normalfont(lines noted with a \textbf{*} still apply today)}}
-$| \qquad$ Société Informatique de France \hfill {\em 2020} \\
-$| \qquad$ Shadow PC AlgoTel \\
-$| \qquad$ Organizing committee IWOCA (website creator: \url{https://iwoca2020.labri.fr/}) \\
-$| \qquad$ Organizing committee seminar AlgoDist at LaBRI \footnote[1]{\label{foot}still applies today} \hfill {\em 2019}\\
-$| \qquad$ PhD student association Afodib, as secretary and seminar organizer \hfill {\em 2018}\\
-$| \qquad$ MATh.en.JEANS \\
-$| \qquad$ Organizing committee FCT \hfill {\em 2017}\\
-$| \qquad$ Maths à modeler
-\end{rSection}
-
-\begin{rSection}{Summer schools}
-$| \qquad$ École de Jeunes Chercheurs en Informatique Mathématique \hfill {\em 2020}\\
-$| \qquad$ ResCom (assistant and attendant)\hfill {\em 2019}
-\end{rSection}
-
-\begin{rSection}{Events otherwise attending/attended}
-%$| \qquad$ Dagstuhl Seminar Temporal Graphs: Structure, Algorithms, Applications \hfill {\em 2021}\\
-$| \qquad$ Journée SIF Pandématique (online) \hfill {\em 2020}\\
-$| \qquad$ Journées Graphes et Algorithmes (online) \\
-$| \qquad$ GraphMasters workshop (online) \\
-$| \qquad$ International Workshop on Graph-Theoretic Concepts (online) \\
-$| \qquad$ ICALP Algorithmic Aspects of Temporal Graphs (online)\\
-$| \qquad$ French-Israeli Laboratory on Foundations of Computer Science \hfill {\em 2018} \\
-$| \qquad$ Journées Complexité et Algorithmes \\
-$| \qquad$ Journées Graphes et Algorithmes \hfill {\em 2017} 
-\end{rSection}
 
 %\begin{rSection}{Free time}
 %$| \qquad$ Discovering the world and nature (hiking, bike trips, journeys, ...) \\
@@ -252,8 +265,8 @@ $| \qquad$ Journées Graphes et Algorithmes \hfill {\em 2017}
 %$| \qquad$ Occasional jogging or climbing 
 %\end{rSection}
 
-%\begin{center}
-%-----------
-%\end{center}
+\begin{center}
+-----------
+\end{center}
 
 \end{document}
